@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+header{
+    display: flex;
+    justify-content: center;   
+    box-shadow: 0 0 5px #4f4f4f;
+    margin-bottom: 3px;
+}
+.headerlogo{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.mainsearchbar{
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding-top: 7px
+}
+.mainsearchbar input{
+    border: none;
+    background-color: inherit;
+    text-align: center;
+    font-size: 0.9em;
+    width: 30%;
+    margin-left: 1%;
+}
+body{
+    margin: 0;
+}
+.mainintroduction{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F6F6F7;
+    height: 250px;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.mainintroduction h2{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.mainintroduction p{
+    font-weight: 100;
+    margin-bottom: 40px;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.btnmain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    color: white;
+    text-decoration: none;
+    width: 70%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0 7px 16px #0000002e;
+    transition: box-shadow 400ms;
+}
