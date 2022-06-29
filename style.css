@@ -82,3 +82,149 @@ p{
     box-shadow: 0 7px 16px #0000002e;
     transition: box-shadow 400ms;
 }
+.mainfunction {
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.mainfunction h2 {
+    margin-left: 5%;
+}
+.mainfunction--global {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+}
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.mainfunction--containers {
+    display: flex;
+    background-color: #F6F6F7;
+    box-shadow: 0 0 16px #0000002e;
+    margin-bottom: 30px;
+    width: 80%;
+    border-radius: 50px;
+    height: 70px;
+}
+.mainfunction--number {
+    background-color: #9356DC;
+    border-radius: 50px;
+    height: 20px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    margin-top: 20px;
+    margin-left: -10px;
+}
+.mainfunction--content {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+}
+.mainrestaurants {
+    padding-top: 30px;
+    background-color: #F6F6F7;
+    font-family: 'Roboto', sans-serif;
+}
+.mainrestaurants h2 {
+    margin-left: 5%;
+}
+.main__restaurants--text h3 {
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+.mainrestaurants--global {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainrestaurants--content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.mainrestaurants--text {
+    color: black;
+}
+.mainrestaurants--container {
+    box-shadow: 0 0 16px #0000002e;
+    border-radius: 20px;
+    width: 90%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+.mainrestaurants--img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.mainrestaurants--container figure {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainrestaurants--new {
+    width: 25%;
+    height: 30px;
+    background-color: #99E2D0;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+}
+.mainrestaurants--favory {
+    margin-top: 25px;
+    color: black;
+}
+.footer {
+    font-family: "Roboto", sans-serif;
+    background-color: #363636;
+    padding-left: 5%;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
+.footertitle {
+    font-family: "Shrikhand", sans-serif;
+}
+.footerlink-img {
+    display: flex;
+}
+.footerlink-img i {
+    width: 8%;
+}
+.fa, .fas {
+    font-weight: 900;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+.footerlinks a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
