@@ -58,6 +58,23 @@ h2{
     margin-inline-end: 0px;
     font-weight: bold;
 }
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
 .mainintroduction p{
     font-weight: 100;
     margin-bottom: 40px;
@@ -80,7 +97,6 @@ p{
     height: 50px;
     border-radius: 50px;
     box-shadow: 0 7px 16px #0000002e;
-    transition: box-shadow 400ms;
 }
 .mainfunction {
     padding-top: 30px;
@@ -227,4 +243,186 @@ ol {
     flex-direction: column;
     width: 100%;
     margin-bottom: 10px;
+}
+.heart {
+    transition: all 300ms;
+  }
+  .heart:hover {
+    font-weight: 600;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+  }
+  .header-menu {
+    margin-bottom: 0;
+}
+.headerlogo {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.header .fa-arrow-left {
+    font-size: 1.7rem;
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    color: black;
+}
+.main-menuimg {
+    width: 100%;
+    object-fit: cover;
+}
+.main-menu {
+    font-family: "Roboto", sans-serif;
+}
+.main-menu_container {
+    background-color: #F6F6F7;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -45px;
+    position: sticky;
+    padding-bottom: 30px;
+}
+.main-menu_container--title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-menu_container--title h1 {
+    font-family: "Shrikhand", sans-serif;
+}
+.main-menu_container--component h2 {
+    margin-left: 5%;
+}
+.main-menu_container--component h2::after {
+    content: "";
+    font-size: 1px;
+    padding: 0px 30px 0px 30px;
+    border-top: #99E2D0 solid 5px;
+}
+.main-menu_container--article-infos h3 {
+    margin-bottom: 0;
+    font-size: 1.1em;
+}
+.main-menu_container--elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.main-menu_container--article {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding-right: 8%;
+    padding-left: 5%;
+    box-shadow: 0 0 16px #0000002e;
+}
+.main-menu_container--article-infos {
+    width: 75%;
+    position: relative;
+}
+.main-menu_container--article-infos p {
+    font-size: 0.9em;
+    margin-top: 0;
+    white-space: initial;
+    overflow: hidden;
+    width: 100%;
+}
+.main-menu_container--article span {
+    margin-right: -4%;
+    margin-top: 40px;
+    position: relative;
+}
+.main-menu_container--submit {
+    display: flex;
+    justify-content: center;
+}
+.btn-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    color: white;
+    text-decoration: none;
+    width: 70%;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0 7px 16px #0000002e;
+}
+
+@keyframes displayMenu {
+    0% {
+      opacity: 0;
+      margin-top: 5px;
+    }
+    15% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes box {
+    from {
+      transform: translateX(72px);
+    }
+    to {
+      transform: translateX(10px);
+    }
+  }
+.main-menu_container--article-one {
+    animation: displayMenu 1.2s;
+}
+.main-menu_container--article-two {
+    animation: displayMenu 1.4s;
+}
+.main-menu_container--article-three {
+    animation: displayMenu 1.6s;
+}
+.main-menu_container--encoche {
+    width: 20%;
+    position: relative;
+    border-radius: 0px 20px 20px 0px;
+    margin-right: -7%;
+    background-color: #99E2D0;
+    margin-bottom: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: boxReverse 400ms linear both;
+}
+.main-menu_container--article:hover .main-menu_container--encoche {
+    animation: box 400ms linear both;
+}
+.main-menu_container--logo-validate {
+    background-color: white;
+    border-radius: 100px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-check:before {
+    content: "\f00c";
+}
+.main-menu_container--article:hover {
+    overflow: hidden;
 }
