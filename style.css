@@ -364,6 +364,7 @@ ul {
     box-shadow: 0 7px 16px #0000002e;
 }
 
+
 @keyframes displayMenu {
     0% {
       opacity: 0;
@@ -387,6 +388,14 @@ ul {
       transform: translateX(10px);
     }
   }
+@keyframes boxReverse {
+    from {
+      transform: translateX(10px);
+    }
+    to {
+      transform: translateX(72px);
+    }
+  }
 .main-menu_container--article-one {
     animation: displayMenu 1.2s;
 }
@@ -408,8 +417,12 @@ ul {
     align-items: center;
     animation: boxReverse 400ms linear both;
 }
-.main-menu_container--article:hover .main-menu_container--encoche {
-    animation: box 400ms linear both;
+.card:hover > .card__check {
+    flex: 25%;
+    transform: translateX(0px);
+    background-color: #99e2d0;
+    cursor: pointer;
+    color: #f6f6f6;
 }
 .main-menu_container--logo-validate {
     background-color: white;
